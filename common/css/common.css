@@ -1,0 +1,532 @@
+/*重构boostrap*/
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-indicators li {
+    width: 13px;
+    height: 13px;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-caption {
+    width: 100%;
+    height: 100%;
+    left: 0 !important;
+    right: 0 !important;
+    display: inline-flex;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    min-width: 100%;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*自定义公共样式*/
+/*1.所有标签样式*/
+
+* {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%
+}
+
+li {
+    list-style: none;
+}
+
+.my-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.background {
+    padding: 45px 0;
+}
+
+.col-my-5 {
+    width: 20%;
+    float: left;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/*2.颜色*/
+.text-yellow {
+    color: #FFDB4F;
+}
+
+/*3.banner样式*/
+.banner-content {
+    color: #ffffff;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.banner-title,
+.banner-subtitle,
+.banner-text {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* .banner-title,
+.banner-subtitle {
+    font-family: "SimSun";
+    font-family: "SimHei";
+} */
+
+.banner-left {
+    text-align: left;
+    margin-left: 15%;
+}
+
+.banner-right {
+    text-align: right;
+    margin-right: 15%;
+}
+
+.banner-middle {
+    margin: 0 auto;
+}
+
+/*4.dialog*/
+.dialog {
+    padding: 100px 0 150px;
+}
+
+.dialog li:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.insightCloud .dialog li:hover {
+    transform: translateY(0);
+    cursor: inherit;
+}
+
+.dialog-header {
+    color: #ffffff;
+    text-align: center;
+}
+
+.dialog-title {
+    font-size: 24px;
+}
+
+.dialog-con {
+    font-size: 16px;
+}
+
+.dialog-list {
+    margin: 100px 10px;
+
+}
+
+.dialog-box {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    padding: 15px 10px;
+    height: 400px;
+    box-shadow: 0 0 15px 5px rgba(202, 203, 204, 0.3);
+    margin: 10px 0;
+    color: #3B537C;
+}
+
+.dialog-box-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.dialog-box-header img {
+    margin-bottom: 15px;
+    width: 65%;
+}
+
+.dialog-box-title {
+    font-size: 20px;
+}
+
+.dialog-box-subtitle {
+    font-size: 20px;
+}
+
+.dialog-box-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.dialog-box-content1 {
+    min-height: 145px;
+    padding: 20px;
+}
+
+/*产品页*/
+.block {
+    position: relative;
+}
+
+.block .dialog {
+    padding: 0;
+}
+
+.block .dialog-box {
+    padding: 30px;
+}
+
+.block>img {
+    width: 100%;
+}
+
+.block .carousel-caption {
+    padding-top: 81px;
+}
+
+.product-middle,
+.service-middle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.product-abstract {
+    text-align: left;
+    padding: 25px 50px;
+    font-size: 16px;
+    /* font-family: 'Microsoft YaHei'; */
+    line-height: 2;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom left, #44AECC, #205FBC);
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+.product-abstract1 {
+    color: #5E5E5E;
+    background: none;
+}
+
+.product-abstract2 {
+    background: #808080;
+}
+
+.product-image {
+    padding: 5px;
+    background-color: #f4f6fb;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-02:before,
+.product-03:before,
+.service-02:before,
+.service-03:before,
+.about-02:before,
+.search-01:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #f4f6fb;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0%;
+    margin-top: -20px;
+}
+
+.product-02,
+.service-02,
+.about-02,
+.search-01 {
+    background-color: #f4f6fb;
+    position: relative;
+}
+
+.product-02:after {
+    content: '';
+    width: 130px;
+    height: 194px;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    display: none;
+    background-image: url(../../images/middle01.png);
+}
+
+.product-02 .dialog-header {
+    padding: 25px 32px;
+    text-align: center;
+    color: #1b1b1b;
+}
+
+.product-02 .dialog-box {
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+    height: 300px;
+}
+
+.product-02 .dialog-box-header {
+    border: none;
+}
+
+.product-02 .dialog-box-header img {
+    background-color: #fff;
+    width: 164px;
+    border-radius: 50%;
+    font-size: 100px;
+}
+
+.product-02 .dialog-box-header .icon {
+    background-color: #fff;
+    width: 164px;
+    border-radius: 50%;
+    font-size: 90px;
+    display: block;
+    height: 164px;
+    padding-top: 17px;
+    margin: 0 auto 15px;
+}
+
+.product-02 .dialog-box-content {
+    padding: 0px;
+}
+
+.product-02 .dialog-list {
+    margin: 55px 0 60px;
+}
+
+.product-03,
+.service-03 {
+    background-image: linear-gradient(to right, #45b2cd, #276ebf);
+    position: relative;
+}
+
+.product-03 .dialog-box-content {
+    padding-top: 0px;
+}
+
+.product-03:before,
+.service-03:before {
+    border-bottom: 20px solid #3287c4;
+}
+
+.product-03 .dialog-list {
+    margin-bottom: 0;
+}
+
+.service-box {
+    padding: 100px;
+}
+
+.service-header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.service-image img {
+    width: 100%;
+}
+
+.service-title {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+    margin: 10px 0 0;
+}
+
+.service-subtitle {
+    font-size: 16px;
+    color: #0077ff;
+}
+
+.service-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 768px) {
+
+    /*40%*/
+    .banner-title {
+        font-size: 20px;
+    }
+
+    .banner-subtitle.text-yellow {
+        display: none;
+    }
+
+    .banner-subtitle {
+        font-size: 12px;
+    }
+
+    .banner-text {
+        font-size: 8px;
+    }
+
+    .banner-left {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .my-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .product-02:before,
+    .product-03:before,
+    .service-02:before,
+    .service-03:before,
+    .about-02:before,
+    .search-01:before {
+        border-bottom: 10px solid #f4f6fb;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        position: absolute;
+        left: calc(50% - 5px);
+        top: 0%;
+        margin-top: -10px;
+    }
+
+    .product-03:before,
+    .service-03:before {
+        border-bottom: 10px solid #3287c4;
+    }
+
+    .banner-right {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /*50%*/
+    .banner-title {
+        font-size: 25px;
+    }
+
+    .banner-subtitle {
+        font-size: 15px;
+    }
+
+    .banner-text {
+        font-size: 9px;
+    }
+
+
+    .block .carousel-caption {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /*75%*/
+    .banner-title {
+        font-size: 37px;
+    }
+
+    .banner-subtitle {
+        font-size: 22px;
+    }
+
+    .banner-text {
+        font-size: 13px;
+    }
+
+    .dialog-box-header img {
+        width: 100%;
+    }
+
+    .product-02:after {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .banner-title {
+        font-size: 50px;
+    }
+
+    .banner-subtitle {
+        font-size: 30px;
+    }
+
+    .banner-text {
+        font-size: 18px;
+    }
+}
