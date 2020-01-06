@@ -396,7 +396,9 @@ a:focus {
 }
 
 .service-image img {
-    width: 100%;
+    /* width: 80%; */
+    display: block;
+    margin: 0 auto;
 }
 
 .service-title {
@@ -489,6 +491,10 @@ a:focus {
 
     .block .carousel-caption {
         padding-top: 0;
+    }
+
+    .service-image img {
+        width: 80%;
     }
 }
 

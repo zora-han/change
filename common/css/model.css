@@ -265,6 +265,14 @@
     border-bottom: 20px solid #3f5c82;
 }
 
+.technology .dialog-box{
+    height: 450px;
+    background-color: #ffffff;
+}
+.technology .dialog-list{
+    margin-bottom: 50px;
+}
+
 /*4.首页核心能力*/
 .ability .dialog-header {
     color: #1B1B1B;
@@ -275,7 +283,7 @@
     background: transparent;
     box-shadow: none;
     padding: 20px;
-    height: 400px;
+    height: 350px;
 }
 
 .ability .dialog-box img {
@@ -578,6 +586,10 @@ a.company-con:hover {
 .atp-02:after {
     width: 125px;
     background-image: url(../../images/middle02.png);
+}
+
+.atp-03 .dialog-box{
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .service-banner .banner-content {

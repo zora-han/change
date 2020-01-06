@@ -180,7 +180,7 @@ html{
     font-size: 19px;
 }
 
-.bgBlueGreenRadialGradient {
+.bgBlueGreenRadialGradient { 
     /* background: #1cbb98; */
     /* background: radial-gradient(ellipse at center,#1cbb98 0,#255675 100%); */
     /* background: radial-gradient(ellipse at center, #7cdedc 0, #3f5c82 100%); */
@@ -202,7 +202,7 @@ html{
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .productWheel__initial {
@@ -295,7 +295,7 @@ html{
     fill: #4d5a5e
 }
 
-.productWheel__active .slice:hover {
+/* .productWheel__active .slice:hover {
     opacity: 1;
     -webkit-transition: opacity 150ms ease-in-out 150ms;
     transition: opacity 150ms ease-in-out 150ms
@@ -309,7 +309,7 @@ html{
     opacity: 1;
     -webkit-transition: opacity 150ms ease-in-out .3s;
     transition: opacity 150ms ease-in-out .3s
-}
+} */
 
 .productWheel__active .slice .ctaBtn {
     width: 85px;
